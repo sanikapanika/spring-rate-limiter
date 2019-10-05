@@ -5,7 +5,7 @@
 
     <groupId>com.sanikapanika.ratelimiter</groupId>
     <artifactId>spring-rate-limiter</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
     <packaging>jar</packaging>
 
     <name>spring-rate-limiter</name>
