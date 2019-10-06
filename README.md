@@ -5,8 +5,8 @@
 
 ```xml
 <dependency>
-			<groupId>com.sanikapanika.ratelimiter</groupId>
-			<artifactId>spring-rate-limiter-starter</artifactId>
-			<version>{$latestVersion}</version>
+	<groupId>com.sanikapanika.ratelimiter</groupId>
+	<artifactId>spring-rate-limiter-starter</artifactId>
+	<version>{$latestVersion}</version>
 </dependency>
 ```
