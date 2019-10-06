@@ -15,7 +15,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 @Configuration
 @ConditionalOnClass(ThrottlingBeanPostProcessor.class)
@@ -47,14 +46,13 @@ public class ThrottlingAutoConfiguration {
     @Bean
     @ConditionalOnWebApplication
     public WebMvcConfigurer interceptorAdapter() {
-        return new WebMvcConfigurerAdapter() {
+        return new WebMvcConfigurer() {
             @Override
             public void addInterceptors(InterceptorRegistry registry) {
                 registry.addInterceptor(throttlingInterceptor());
             }
         };
     }
-
 
     @Bean
     @ConditionalOnMissingBean

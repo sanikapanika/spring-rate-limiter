@@ -2,7 +2,7 @@ package com.sanikapanika.ratelimiter.autoconfigure;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties(prefix = "spring.throttling")
+@ConfigurationProperties(prefix = "spring.ratelimiter")
 public class ThrottlingProperties {
 
     private Integer lruCacheCapacity;
